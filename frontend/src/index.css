@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-white selection:bg-white/30 overflow-x-hidden;
+    /* We'll use this root variable for the sentiment-driven background mesh */
+    --sentiment-color: #708090; /* Initial Steel Gray */
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl;
+  }
+}
+
+/* Liquid cursor hide default cursor */
+body {
+  cursor: none;
+}
